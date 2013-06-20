@@ -1,0 +1,29 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+</head>
+<body>
+
+		<a href="javascript:dosomething();">GO</a>
+
+		<a href="#" id="12345" onClick="runFunction(this.id);return false;">RUN</a>
+		<a href="#" onclick="alert(1);return false;">JUMP</a>
+
+		<a herf="javascript:void(0);" onclick="alert(1);return false;">DUAL</a>
+
+		<div onclick="alert(1);">BRO</div>
+		<a href="#" onclick="location.href='http://www.baidu.com';">BLINK</a>
+		<script>
+
+			function dosomething() {
+				alert(1);
+			}
+
+			function runFunction(id) {
+				alert(id);
+			}
+		</script>
+</body>
+</html>
