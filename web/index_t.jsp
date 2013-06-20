@@ -23,5 +23,13 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 </head>
 <body>
     <h1>Hello, world!</h1>
+    <a href="#Foo" onclick="runMyFunction();">Do it!</a>
+
+    <script>
+        function runMyFunction() {
+          //code
+          alert(1);
+        }
+    </script>
 </body>
 </html>
