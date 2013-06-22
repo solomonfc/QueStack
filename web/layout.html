@@ -25,16 +25,26 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			margin: 0 auto;	
 		}
 
-		.qstn_rec_ctlg_name,
 		.qstn_rec_title{
-			display: inline-block;
-			width:600px;
+			//display: inline-block;
+			width:700px;
 		}
 
-		.qstn_rec_user_id,
+		.qstn_rec_ctlg_name{
+			display: inline-block;
+			width:380px;
+		}
+
+		.qstn_rec_user_id{
+			display: inline-block;
+			text-align: right;
+			width:150px;
+		}
+
 		.qstn_rec_ent_time{
 			display: inline-block;
-			width:130px;
+			text-align: right;
+			width:120px;
 		}
 
 		#qstn_dtl_title,
@@ -42,32 +52,33 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			width:700px;
 		}
 
+		#qstn_dtl_user_id{
+			text-align: right;
+		}
+
 		#qstn_dtl_ctlg_name{
 			display: inline-block;
 			width:620px;
 		}
 
-		#qstn_dtl_user_id{
-			display: inline-block;
-		}
-
 		#qstn_dtl_ent_time{
-			width:680px;
 			text-align: right;
 		}
 
-		#ans_rec_content{
+		.ans_rec_content{
 			width:600px;
 		}
 
 		.ans_rec_user_id{
 			display: inline-block;
-			width:450px;
 			text-align: right;
+			width:380px;
 		}
 
 		.ans_rec_ent_time{
 			display: inline-block;
+			text-align: right;
+			width:200px;
 		}
 
 
@@ -76,6 +87,73 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 </head>
 
 <body>
+
+<div id="page_container">
+
+	<div id="qstn_lst_container">
+		<div class="qstn_rec_container">
+
+				<div class="qstn_rec_title"><h3>How Can Add Remains/vestigial UITabBarItems On UITableView when Click on more button of UITabBar?</h3></div>
+
+			<div id="qstn_rec_container_footer_">
+				<div class="qstn_rec_ctlg_name">&nbsp&nbsp&nbsp&nbspJava&nbsp-&nbspJDBC</div>
+				<div class="qstn_rec_user_id">Bruce</div>
+				<div class="qstn_rec_ent_time">2013-06-21</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+
+	<div id="qstn_ans_container">
+		<div id="qstn_dtl_container">
+
+			<div id="qstn_dtl_title">
+				<h3>
+					How Can Add Remains/vestigial UITabBarItems On UITableView when Click on more button of UITabBar?
+				</h3>
+			</div>
+			<div id="qstn_dtl_ctlg_name">
+				<p>&nbsp&nbsp&nbsp&nbspJava&nbsp-&nbspJDBC</p>
+			</div>
+
+
+			<div id="qstn_dtl_content">
+				XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX 
+			</div>
+
+			<div id="qstn_dtl_ent_time">2013-06-21 19:13</div>
+			<div id="qstn_dtl_user_id">Bruce</div>
+
+		</div>
+
+
+		<hr>
+
+		<div id="ans_lst_container">
+
+			<div class="ans_rec_container">
+
+				<div class="ans_rec_content">XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX 
+				</div>
+
+				<div>
+
+					<div class="ans_rec_user_id">Bruce</div>
+
+					<div class="ans_rec_ent_time">2013-06-21 19:13</div>
+
+				</div>
+
+			</div>
+			<hr>
+		</div>
+	</div>
+
+</div>
+
 
 <!-- <table width="80%">
 	<tbody>
@@ -116,45 +194,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<tfoot>
 	</tfoot>
 </table> -->
-
-
-<div id="page_container">
-
-	<div id="qstn_lst_container">
-		<div class="qstn_rec_container">
-			<div id="qstn_rec_container_row_1_">
-				<div id="qstn_rec_container">How to use multiple queries in Java?</div>
-				<div id="qstn_rec_user_id">Bruce</div>
-				</div>
-			<div id="qstn_rec_container_row_2_">
-				<div id="qstn_rec_ctlg_name">&nbsp&nbsp&nbsp&nbspJava&nbsp-&nbspJDBC</div>
-				<div id="qstn_rec_ent_time">2013-06-21</div>
-			</div>
-		</div>
-	</div>
-
-	<hr>
-
-	<div id="qstn_ans_container">
-		<div class="qstn_dtl_container">
-			<div id="qstn_dtl_title">How to use multiple queries in Java?</div>
-			<div>
-				<div id="qstn_dtl_ctlg_name"></div>
-				<div id="qstn_dtl_user_id"></div>
-			</div>
-			<div id="qstn_dtl_content"></div>
-			<div id="qstn_dtl_ent_time"></div>
-
-		</div>
-	</div>
-
-	<div>
-	</div>
-
-	<div>
-	</div>
-
-</div>
 
 
 </body>
