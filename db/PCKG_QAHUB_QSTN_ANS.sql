@@ -55,7 +55,8 @@ PROCEDURE PROC_QSTN_QRY_KWD(
     IS_START_DATE     IN      VARCHAR2,
     IS_END_DATE       IN      VARCHAR2,
     IS_USER_ID        IN      VARCHAR2,
-    IS_USER_FLAG      IN      VARCHAR2,
+    IS_OWNER_FLAG     IN      VARCHAR2,
+    IS_FULLTXT_FLAG   IN      VARCHAR2,
     OI_FLAG           OUT     INTEGER,
     OS_ERRCODE        OUT     VARCHAR2,
     OS_MSG            OUT     VARCHAR2,
@@ -199,7 +200,8 @@ CREATE OR REPLACE PACKAGE BODY PCKG_QAHUB_QSTN_ANS AS
     IS_START_DATE     IN      VARCHAR2,
     IS_END_DATE       IN      VARCHAR2,
     IS_USER_ID        IN      VARCHAR2,
-    IS_USER_FLAG      IN      VARCHAR2,
+    IS_OWNER_FLAG     IN      VARCHAR2,
+    IS_FULLTXT_FLAG   IN      VARCHAR2,
     OI_FLAG           OUT     INTEGER,
     OS_ERRCODE        OUT     VARCHAR2,
     OS_MSG            OUT     VARCHAR2,
@@ -210,25 +212,54 @@ CREATE OR REPLACE PACKAGE BODY PCKG_QAHUB_QSTN_ANS AS
 
     OI_FLAG :=0;
 
-    OPEN  OC_QSTN_CUR FOR
-      SELECT  Q.QSTN_ID,
-              C.CTLG_NAME,
-              SC.SUBCTLG_NAME,
-              Q.USER_ID,
-              Q.TITLE,
-              Q.STATUS,
-              Q.REPLY_NO,
-              Q.ENT_DT,
-              Q.UPD_DT
-      FROM  QAHUB_QSTN Q, QAHUB_CTLG C, QAHUB_SUBCTLG SC
-      WHERE Q.TITLE LIKE '%'||IS_KEYWORD||'%' AND
-            Q.ENT_TMS >= NVL(TO_TIMESTAMP(IS_START_DATE,'YYYYMMDD'), Q.ENT_TMS) AND
-            Q.ENT_TMS <= NVL((TO_TIMESTAMP(IS_END_DATE,'YYYYMMDD')+1), Q.ENT_TMS) AND
-            Q.CTLG_ID = NVL(IS_CTLG_ID, Q.CTLG_ID) AND
-            Q.SUBCTLG_ID = NVL(IS_SUBCTLG_ID, Q.SUBCTLG_ID) AND
-            Q.CTLG_ID = C.CTLG_ID AND
-            Q.SUBCTLG_ID = SC.SUBCTLG_ID
-            ORDER BY Q.ENT_TMS;
+
+    IF IS_START_DATE IS NULL AND IS_END_DATE IS NULL THEN
+      
+      DBMS_OUTPUT.PUT_LINE(1);
+
+      OPEN  OC_QSTN_CUR FOR
+        SELECT  Q.QSTN_ID,
+                C.CTLG_NAME,
+                SC.SUBCTLG_NAME,
+                Q.USER_ID,
+                Q.TITLE,
+                Q.STATUS,
+                Q.REPLY_NO,
+                Q.ENT_DT,
+                Q.UPD_DT
+        FROM  QAHUB_QSTN Q, QAHUB_CTLG C, QAHUB_SUBCTLG SC
+        WHERE (Q.TITLE LIKE '%'||IS_KEYWORD||'%' OR
+              Q.CONTENT LIKE '%'||IS_KEYWORD||'%')AND
+              Q.CTLG_ID = NVL(IS_CTLG_ID, Q.CTLG_ID) AND
+              Q.SUBCTLG_ID = NVL(IS_SUBCTLG_ID, Q.SUBCTLG_ID) AND
+              Q.CTLG_ID = C.CTLG_ID AND
+              Q.SUBCTLG_ID = SC.SUBCTLG_ID
+              ORDER BY Q.ENT_TMS;
+    ELSE
+    
+      DBMS_OUTPUT.PUT_LINE(2);
+      
+      OPEN  OC_QSTN_CUR FOR
+        SELECT  Q.QSTN_ID,
+                C.CTLG_NAME,
+                SC.SUBCTLG_NAME,
+                Q.USER_ID,
+                Q.TITLE,
+                Q.STATUS,
+                Q.REPLY_NO,
+                Q.ENT_DT,
+                Q.UPD_DT
+        FROM  QAHUB_QSTN Q, QAHUB_CTLG C, QAHUB_SUBCTLG SC
+        WHERE (Q.TITLE LIKE '%'||IS_KEYWORD||'%' OR
+              Q.CONTENT LIKE '%'||IS_KEYWORD||'%')AND
+              Q.ENT_TMS >= NVL(TO_TIMESTAMP(IS_START_DATE,'YYYYMMDD'), Q.ENT_TMS) AND
+              Q.ENT_TMS <= NVL((TO_TIMESTAMP(IS_END_DATE,'YYYYMMDD')+1), Q.ENT_TMS) AND
+              Q.CTLG_ID = NVL(IS_CTLG_ID, Q.CTLG_ID) AND
+              Q.SUBCTLG_ID = NVL(IS_SUBCTLG_ID, Q.SUBCTLG_ID) AND
+              Q.CTLG_ID = C.CTLG_ID AND
+              Q.SUBCTLG_ID = SC.SUBCTLG_ID
+              ORDER BY Q.ENT_TMS;
+    END IF;
 
   EXCEPTION
     WHEN OTHERS THEN
@@ -284,6 +315,8 @@ CREATE OR REPLACE PACKAGE BODY PCKG_QAHUB_QSTN_ANS AS
   ) AS
   BEGIN
 
+    OI_FLAG :=0;
+  
     PROC_QSTN_QRY(
         IS_QSTN_ID,
         OI_FLAG,
