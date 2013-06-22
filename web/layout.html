@@ -4,11 +4,80 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 <html>
 <head>
 
+	<style type="text/css">
+		body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+
+		#page_container{
+			align:center;
+			width:100%;
+		}
+
+		#qstn_lst_container,
+		.qstn_rec_container,
+		#qstn_ans_container,
+		#qstn_dtl_container,
+		#ans_lst_container,
+		.ans_rec_container{
+			display: table;
+			margin: 0 auto;	
+		}
+
+		.qstn_rec_ctlg_name,
+		.qstn_rec_title{
+			display: inline-block;
+			width:600px;
+		}
+
+		.qstn_rec_user_id,
+		.qstn_rec_ent_time{
+			display: inline-block;
+			width:130px;
+		}
+
+		#qstn_dtl_title,
+		#qstn_dtl_content{
+			width:700px;
+		}
+
+		#qstn_dtl_ctlg_name{
+			display: inline-block;
+			width:620px;
+		}
+
+		#qstn_dtl_user_id{
+			display: inline-block;
+		}
+
+		#qstn_dtl_ent_time{
+			width:680px;
+			text-align: right;
+		}
+
+		#ans_rec_content{
+			width:600px;
+		}
+
+		.ans_rec_user_id{
+			display: inline-block;
+			width:450px;
+			text-align: right;
+		}
+
+		.ans_rec_ent_time{
+			display: inline-block;
+		}
+
+
+	</style>
+
 </head>
 
 <body>
 
-<table width="80%">
+<!-- <table width="80%">
 	<tbody>
 		<tr>
 			<td colspan="2" width="500px">How to use multiple queries in java using jdbc?</td>
@@ -46,7 +115,47 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	</tbody>
 	<tfoot>
 	</tfoot>
-</table>
+</table> -->
+
+
+<div id="page_container">
+
+	<div id="qstn_lst_container">
+		<div class="qstn_rec_container">
+			<div id="qstn_rec_container_row_1_">
+				<div id="qstn_rec_container">How to use multiple queries in Java?</div>
+				<div id="qstn_rec_user_id">Bruce</div>
+				</div>
+			<div id="qstn_rec_container_row_2_">
+				<div id="qstn_rec_ctlg_name">&nbsp&nbsp&nbsp&nbspJava&nbsp-&nbspJDBC</div>
+				<div id="qstn_rec_ent_time">2013-06-21</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="qstn_ans_container">
+		<div class="qstn_dtl_container">
+			<div id="qstn_dtl_title">How to use multiple queries in Java?</div>
+			<div>
+				<div id="qstn_dtl_ctlg_name"></div>
+				<div id="qstn_dtl_user_id"></div>
+			</div>
+			<div id="qstn_dtl_content"></div>
+			<div id="qstn_dtl_ent_time"></div>
+
+		</div>
+	</div>
+
+	<div>
+	</div>
+
+	<div>
+	</div>
+
+</div>
+
 
 </body>
 </html>
