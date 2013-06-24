@@ -16,20 +16,69 @@ CREATE OR REPLACE PACKAGE PCKG_QAHUB_CTLG AS
   PROCEDURE PROC_CLTG_QRY(
     OI_FLAG           OUT     INTEGER,
     OS_ERRCODE        OUT     VARCHAR2,
-    OS_MSG            OUT     VARCHAR2
+    OS_MSG            OUT     VARCHAR2,
+    OC_CTLG_CUR       OUT     CTLG_CUR
   );
 
   PROCEDURE PROC_SUBCTLG_QRY(
     IS_CTLG_ID        IN      VARCHAR2,
     OI_FLAG           OUT     INTEGER,
     OS_ERRCODE        OUT     VARCHAR2,
-    OS_MSG            OUT     VARCHAR2
+    OS_MSG            OUT     VARCHAR2,
+    OC_SUBCTLG_CUR    OUT     SUBCLTG_CUR
   );
 
 END PCKG_QAHUB_CTLG;
-
 /
 
 
+CREATE OR REPLACE PACKAGE BODY PCKG_QAHUB_CTLG AS
 
+  PROCEDURE PROC_CLTG_QRY(
+    OI_FLAG           OUT     INTEGER,
+    OS_ERRCODE        OUT     VARCHAR2,
+    OS_MSG            OUT     VARCHAR2,
+    OC_CTLG_CUR       OUT     CTLG_CUR
+  ) AS
+  BEGIN
+
+    OI_FLAG := 0;
+
+    OPEN OC_CTLG_CUR FOR
+      SELECT CTLG_ID, CTLG_NAME
+        FROM QAHUB_CTLG;
+
+  EXCEPTION
+    WHEN OTHERS THEN
+      OI_FLAG     :=-1;
+      OS_ERRCODE  :=SQLCODE;
+      OS_MSG      :=SQLERRM;
+      
+  END PROC_CLTG_QRY;
+
+  PROCEDURE PROC_SUBCTLG_QRY(
+    IS_CTLG_ID        IN      VARCHAR2,
+    OI_FLAG           OUT     INTEGER,
+    OS_ERRCODE        OUT     VARCHAR2,
+    OS_MSG            OUT     VARCHAR2,
+    OC_SUBCTLG_CUR    OUT     SUBCLTG_CUR
+  ) AS
+  BEGIN
+  
+    OI_FLAG := 0;
+
+    OPEN OC_SUBCTLG_CUR FOR
+      SELECT CTLG_ID, CTLG_NAME
+        FROM QAHUB_CTLG
+          WHERE CTLG_ID = IS_CTLG_ID;
+
+  EXCEPTION
+    WHEN OTHERS THEN
+      OI_FLAG     :=-1;
+      OS_ERRCODE  :=SQLCODE;
+      OS_MSG      :=SQLERRM;
+      
+  END PROC_SUBCTLG_QRY;
+
+END PCKG_QAHUB_CTLG;
 /
