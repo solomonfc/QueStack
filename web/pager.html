@@ -3,65 +3,37 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
 
-<head></head>
+<head>
+	
 
-<body>
-<a href="" onclick="intialPagerParams(111,20)">Hey</a>
-
-<div id="pager">
-
-	Pages:&nbsp<span id="currentPageNum"></span>&nbsp/&nbsp
-	<span id="totalPageNum"></span>&nbsp
-
-	<a href="" onclick="firstPage()">«</a>
-	<a href="" onclick="previousPage()">‹</a>
-
-	<span id="pageNumbers"></span>
-
-	<a href="" onclick="nextPage()">›</a>
-	<a href="" onclick="lastPage()">»</a>
-</div>
-
-<script src="./js/jquery-1.10.1.min.js">
-</script>
+<script src="./js/jquery-1.10.1.min.js"></script>
 <script type="text/javascript">
-
 	var fetchNum;
 	var totalNum;
 	var totalPages;
 	var currentPage;
 	var beginPos;
 
-	// var pager=
-	// {
-	// 	'fetchNum':1,
-	// 	'totalNum':1,
-	// 	'totalPages':1,
-	// 	'currentPage':1,
-	// 	'beginPos':1
-	// };
-
 	function intialPagerParams(totalNumber,fetchNumber){
-		fetchNum = fetchNumber;
-		totalNum = totalNumber;
-		totalPages = Math.ceil(totalNum/fetchNum);
-		currentPage = 1;
-		beginPos = 1;
-		alert(totalPages);
+		window.fetchNum = fetchNumber;
+		window.totalNum = totalNumber;
+		window.totalPages = Math.ceil(totalNum/fetchNum);
+		window.currentPage = 1;
+		window.beginPos = 1;
+		//alert(totalPages);
 		//loadPager();
 	}
 
 	function loadPager(){
 		$('#pageNumbers').append('Hey');
-
 		$('#pageNumbers').append('Hey');
 	}
 
 	function firstPage(){
 		currentPage = 1;
 		//beginPos = 1;
-		alert(beginPos);
-		alert(totalPages);
+		alert(window.beginPos);
+		//alert(totalPages);
 
 	}
 
@@ -79,6 +51,24 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
 
 </script>
+</head>
+
+<body>
+<a href="" onclick="intialPagerParams(111,20)">Hey</a>
+
+<div id="pager">
+
+	Pages:&nbsp<span id="currentPageNum"></span>&nbsp/&nbsp
+	<span id="totalPageNum"></span>&nbsp
+
+	<a href="" onclick="firstPage()">«</a>
+	<a href="" onclick="previousPage()">‹</a>
+
+	<span id="pageNumbers"></span>
+
+	<a href="" onclick="nextPage()">›</a>
+	<a href="" onclick="lastPage()">»</a>
+</div>
 
 
 </body>

@@ -10,7 +10,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
-public class HelloFilter implements Filter {
+public class QuestionFilter implements Filter {
 
 	@Override
 	public void init(FilterConfig arg0) throws ServletException {

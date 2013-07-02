@@ -1,4 +1,4 @@
-package org.BruceGallery.DB;
+package org.BruceGallery.QueStack;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.commons.dbcp.BasicDataSourceFactory;

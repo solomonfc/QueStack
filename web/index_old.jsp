@@ -1,5 +1,5 @@
 <%@ page import="java.sql.Connection" %>
-<%@ page import="org.BruceGallery.DB.ConnectionSource" %>
+<%@ page import="org.BruceGallery.QueStack.ConnectionSource" %>
 <%--
   Created by IntelliJ IDEA.
   User: Bruce
