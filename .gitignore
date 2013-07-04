@@ -1,3 +1,9 @@
 # exclude IDE files
 out/*
 out
+.settings/*
+.settings
+.idea/*
+.idea
+build/*
+build
