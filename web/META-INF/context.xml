@@ -35,7 +35,7 @@
     <Resource name="jdbc/QAHUB" auth="Container"
               type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
               url="jdbc:oracle:thin:@localhost:1521:xe"
-              username="QAHUB" password="naima8712" maxActive="20" maxIdle="10"
+              username="QAHUB" password="naima88712" maxActive="20" maxIdle="10"
               maxWait="-1"/>
 
 </Context>

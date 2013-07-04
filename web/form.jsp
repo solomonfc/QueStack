@@ -1,9 +1,4 @@
-<%@ page import="org.BruceGallery.QueStack.Controller.Question" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<%
-    Question.keywordSearch("", "", "", "", "", "", "", "", 1, 50);
-%>
 
 
 <!DOCTYPE html
@@ -155,69 +150,37 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
 <div class="container">
 
-    <div id="page_container">
-        <div id="qstn_lst_container">
-            <div class="qstn_rec_container">
-                <div class="qstn_rec_title">
-                    <h4>
-                        How Can Add Remains/vestigial UITabBarItems On UITableView when Click on more button of UITabBar?
-                    </h4>
-                </div>
-                <div id="qstn_rec_container_footer_">
-                    <div class="qstn_rec_ctlg_name meta-item">&nbsp&nbsp&nbsp&nbspJava&nbsp-&nbspJDBC</div>
-                    <div class="qstn_rec_user_id meta-item">Bruce</div>
-                    <div class="qstn_rec_ent_time meta-item">2013-06-21</div>
-                </div>
-            </div>
-        </div>
 
-        <hr>
-
-        <div id="qstn_ans_container">
-            <div id="qstn_dtl_container">
-
-                <div id="qstn_dtl_title">
-                    <h3>
-                        How Can Add Remains/vestigial UITabBarItems On UITableView when Click on more button of UITabBar?
-                    </h3>
-                </div>
-                <div id="qstn_dtl_ctlg_name" class="meta-item">
-                    <p>&nbsp&nbsp&nbsp&nbspJava&nbsp-&nbspJDBC</p>
-                </div>
+    <div id="advance_search">
 
 
-                <div id="qstn_dtl_content">
-                    XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-                </div>
+        <form class="form-horizontal">
+            <div class="control-group controls-row">
+                <label class="control-label" for="inputEmail">Email</label>
 
-                <div id="qstn_dtl_ent_time" class="meta-item">2013-06-21 19:13</div>
-                <div id="qstn_dtl_user_id" class="meta-item">Bruce</div>
+                    <input type="text" id="inputEmail" placeholder="Email">
+
+                <label class="control-label" for="inputPassword">Password</label>
+
+                    <input type="password" id="inputPassword" placeholder="Password">
 
             </div>
 
-
-            <hr>
-
-            <div id="ans_lst_container">
-
-                <div class="ans_rec_container">
-                    <div class="ans_rec_vote">
-                        VOTE
-
-                    </div>
-
-                    <div class="ans_rec_content">XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-                    </div>
-
-                    <div>
-                        <div class="ans_rec_user_id meta-item">Bruce</div>
-                        <div class="ans_rec_ent_time meta-item">2013-06-21 19:13</div>
-                    </div>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <button type="submit" class="btn">Sign in</button>
                 </div>
-                <hr>
             </div>
-        </div>
+        </form>
+
+
     </div>
+
+
+
     <hr>
     <footer>
         <p>&copy; BruceGallery 2013</p>

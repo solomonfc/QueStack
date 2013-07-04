@@ -8,48 +8,34 @@
 <html>
 <head>
     <title></title>
+    <script src="js/jquery-1.10.1.js"></script>
 </head>
 <body>
 
-
-<a href="" onclick="ajaxGetJSON()">
-
-GetJSON
-
-</a>
-
+<input type="text" name="lname" id="lname"/>
+<a href="javascript:void(0);" onclick="keyword_search()">Search</a>
 
 <script type="text/javascript">
-	function ajaxGetJSON(){
-		$.ajax({
-			type: "POST",
-			url: 'question',
-			data: {"bad":"bad body"}, // serializes the form's elements.
-			error: function(jqXHR, textStatus, errorMessage) {
-									console.log(errorMessage); // Optional
-									},
-			success: function(data) {
-									alert(data.text); // show response from the php script.
-									}
-		});
-	}
-	// $.getJSON('ajax/test.json', function(data) {
+    var resultJson;
 
-        // alert(1);
+    function keyword_search() {
 
+        var inputData = {keyword:$("#lname").val()}
 
-//		var items = [];
-
-//		$.each(data, function(key, val) {
-//		 items.push('<li id="' + key + '">' + val + '</li>');
-//		});
-//
-//		$('<ul/>', {
-//		 'class': 'my-new-list',
-//		 html: items.join('')
-//		}).appendTo('body');
-	// });
-
+        $.ajax({
+            type: "POST",
+            url: 'question',
+            data: inputData,
+            dataType : 'json',
+            error: function(jqXHR, textStatus, errorMessage) {
+                console.log(errorMessage);
+            },
+            success: function(data) {
+                resultJson = data;
+                alert(data.OI_TOTALNUM);
+            }
+        });
+    }
 
 
 </script>

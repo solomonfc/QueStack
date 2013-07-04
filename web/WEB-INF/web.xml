@@ -20,6 +20,7 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list-->
 
+
     <resource-ref>
         <description>DB Connection</description>
         <res-ref-name>jdbc/QAHUB</res-ref-name>
@@ -28,12 +29,12 @@
     </resource-ref>
 
     <servlet>
-        <servlet-name>QuestionServlet</servlet-name>
-        <servlet-class>org.BruceGallery.QueStack.Servlet.QuestionServlet</servlet-class>
+        <servlet-name>KeywordSearch</servlet-name>
+        <servlet-class>org.BruceGallery.QueStack.Servlet.KeywordSearch</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>QuestionServlet</servlet-name>
+        <servlet-name>KeywordSearch</servlet-name>
         <url-pattern>/question</url-pattern>
     </servlet-mapping>
 

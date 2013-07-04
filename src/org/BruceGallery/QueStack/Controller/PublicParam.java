@@ -1,4 +1,4 @@
-package org.BruceGallery.QueStack.Model;
+package org.BruceGallery.QueStack.Controller;
 
 /**
  * Created with IntelliJ IDEA.

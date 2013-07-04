@@ -6,25 +6,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import oracle.jdbc.OracleTypes;
 import org.BruceGallery.QueStack.ConnectionSource;
-import org.BruceGallery.QueStack.Model.PublicParam;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Bruce
- * Date: 7/2/13
- * Time: 10:56 PM
- * To change this template use File | Settings | File Templates.
- */
 public class Question {
-
-    private PublicParam pubParams;
 
     public static void main (String [] args) throws SQLException {
         Question qstnCtrl = new Question();
         qstnCtrl.keywordSearch("", "", "", "", "", "", "", "", 1, 50);
     }
 
-	public void keywordSearch(
+	public static String keywordSearch(
             String keyword,
             String ctlg,
             String subctlg,
@@ -42,7 +32,8 @@ public class Question {
 		Connection conn = null;
 		CallableStatement stmt = null;
 		ResultSet questionRS = null;
-        pubParams = new PublicParam();
+
+        String resultJSON="";
 
 		try {
 			conn = ConnectionSource.getConnection();
@@ -70,27 +61,48 @@ public class Question {
             //execute
             stmt.executeUpdate();
 
-            pubParams.setOI_FLAG(stmt.getInt(11));
-            pubParams.setOS_ERRCODE(stmt.getString(12));
-            pubParams.setOS_MSG(stmt.getString(13));
-            pubParams.setOI_TOTALNUM(stmt.getInt(14));
+            StringBuffer sb = new StringBuffer();
+
+            sb.append("{\"OI_FLAG\":\"" +        stmt.getInt(11)+"\",\r\n");
+            sb.append("\"OS_ERRCODE\":\"" +     stmt.getString(12)+"\",\r\n");
+            sb.append("\"OS_MSG\":\"" +         stmt.getString(13)+"\",\r\n");
+            sb.append("\"OI_TOTALNUM\":\"" +    stmt.getInt(14)+"\",\r\n");
+
 
             questionRS = (ResultSet) stmt.getObject(15);
 
+            if(questionRS!=null){
+                sb.append("\"QSTN\":[\r\n");
 
-            System.out.println(pubParams.getOI_FLAG());
+                if(questionRS.next()){
+                    sb.append("{\"QSTN_ID\":\""+questionRS.getString("QSTN_ID")+"\",");
+                    sb.append("\"CTLG_NAME\":\""+questionRS.getString("CTLG_NAME")+"\",");
+                    sb.append("\"SUBCTLG_NAME\":\""+questionRS.getString("SUBCTLG_NAME")+"\",");
+                    sb.append("\"USER_ID\":\""+questionRS.getString("USER_ID")+"\",");
+                    sb.append("\"TITLE\":\""+questionRS.getString("TITLE")+"\",");
+                    sb.append("\"STATUS\":\""+questionRS.getString("STATUS")+"\",");
+                    sb.append("\"REPLY_NO\":\""+questionRS.getString("REPLY_NO")+"\",");
+                    sb.append("\"ENT_DT\":\""+questionRS.getString("ENT_DT")+"\",");
+                    sb.append("\"UPD_DT\":\"" + questionRS.getString("UPD_DT") + "\"}");
+                }
 
-			while (questionRS.next()) {
-                System.out.println("QSTN_ID : " + questionRS.getString("QSTN_ID"));
-//                System.out.println("CTLG_NAME : " + questionRS.getString("CTLG_NAME"));
-//                System.out.println("SUBCTLG_NAME : " + questionRS.getString("SUBCTLG_NAME"));
-//                System.out.println("USER_ID : " + questionRS.getString("USER_ID"));
-//                System.out.println("TITLE : " + questionRS.getString("TITLE"));
-//                System.out.println("STATUS : " + questionRS.getString("STATUS"));
-//                System.out.println("REPLY_NO : " + questionRS.getString("REPLY_NO"));
-//                System.out.println("REPLY_NO : " + questionRS.getString("ENT_DT"));
-//                System.out.println("REPLY_NO : " + questionRS.getString("UPD_DT"));
-			}
+                while (questionRS.next()) {
+                    sb.append(",\r\n{\"QSTN_ID\":\""+questionRS.getString("QSTN_ID")+"\",");
+                    sb.append("\"CTLG_NAME\":\""+questionRS.getString("CTLG_NAME")+"\",");
+                    sb.append("\"SUBCTLG_NAME\":\""+questionRS.getString("SUBCTLG_NAME")+"\",");
+                    sb.append("\"USER_ID\":\""+questionRS.getString("USER_ID")+"\",");
+                    sb.append("\"TITLE\":\""+questionRS.getString("TITLE")+"\",");
+                    sb.append("\"STATUS\":\""+questionRS.getString("STATUS")+"\",");
+                    sb.append("\"REPLY_NO\":\""+questionRS.getString("REPLY_NO")+"\",");
+                    sb.append("\"ENT_DT\":\""+questionRS.getString("ENT_DT")+"\",");
+                    sb.append("\"UPD_DT\":\"" + questionRS.getString("UPD_DT") + "\"}");
+                }
+            }
+
+            sb.append("\r\n]\r\n}");
+
+            resultJSON = sb.toString();
+
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
 		} finally {
@@ -98,9 +110,7 @@ public class Question {
 			if (stmt != null) {stmt.close();}
 			if (conn != null) {conn.close();}
 		}
-	}
-
-    public PublicParam getPubParams() {
-        return pubParams;
+        return resultJSON;
     }
+
 }

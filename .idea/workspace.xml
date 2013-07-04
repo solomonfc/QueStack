@@ -6,7 +6,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0592f9fb-f27c-45b1-b197-d46b3b72085f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/Answer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/KeywordSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/form.jsp" />
+      <change type="DELETED" beforePath="D:\Dropbox\workspace\QueStack\src\org\BruceGallery\QueStack\Model\Answer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\workspace\QueStack\src\org\BruceGallery\QueStack\Model\Question.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\workspace\QueStack\src\org\BruceGallery\QueStack\Servlet\QuestionServlet.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/ConnectionSource.java" afterPath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/ConnectionSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/Question.java" afterPath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/Question.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/META-INF/context.xml" afterPath="$PROJECT_DIR$/web/META-INF/context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/getJSON.jsp" afterPath="$PROJECT_DIR$/web/getJSON.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Dropbox\workspace\QueStack\src\org\BruceGallery\QueStack\Model\Catalog.java" afterPath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/Catalog.java" />
+      <change type="MOVED" beforePath="D:\Dropbox\workspace\QueStack\src\org\BruceGallery\QueStack\Model\PublicParam.java" afterPath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/PublicParam.java" />
+      <change type="MOVED" beforePath="D:\Dropbox\workspace\QueStack\src\org\BruceGallery\QueStack\Model\SubCatalog.java" afterPath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/SubCatalog.java" />
+      <change type="MOVED" beforePath="D:\Dropbox\workspace\QueStack\src\org\BruceGallery\QueStack\Utility.java" afterPath="$PROJECT_DIR$/src/org/BruceGallery/QueStack/QueStackUtility.java" />
     </list>
     <ignored path="QueStack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,21 +31,24 @@
     <ignored path=".idea/" />
     <file path="/index.jsp" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372780763080" ignored="false" />
     <file path="/login.jsp" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1370954730341" ignored="false" />
-    <file path="/Dummy.txt" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372790578512" ignored="false" />
+    <file path="/Dummy.txt" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372947358286" ignored="false" />
     <file path="/Jsp File.txt.ft" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1370969032636" ignored="false" />
     <file path="/a.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1371042657990" ignored="false" />
-    <file path="/context.xml" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372485124336" ignored="false" />
+    <file path="/context.xml" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372950970535" ignored="false" />
     <file path="/dbConnector.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372567602671" ignored="false" />
-    <file path="/ConnectionSource.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372570306250" ignored="false" />
+    <file path="/ConnectionSource.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372948289537" ignored="false" />
     <file path="/QuestionController.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372781256624" ignored="false" />
     <file path="/PublicParam.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372778993179" ignored="false" />
-    <file path="/fragment.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372786187230" ignored="false" />
+    <file path="/fragment.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372866712215" ignored="false" />
     <file path="/Catalog.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372782541516" ignored="false" />
-    <file path="/Question.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372789324929" ignored="false" />
+    <file path="/Question.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372951352808" ignored="false" />
     <file path="/Utility.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372784654835" ignored="false" />
     <file path="/web.xml" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372785803613" ignored="false" />
-    <file path="/QuestionServlet.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372788220791" ignored="false" />
-    <file path="/getJSON.jsp" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372788868027" ignored="false" />
+    <file path="/QuestionServlet.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372952471016" ignored="false" />
+    <file path="/getJSON.jsp" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372953024898" ignored="false" />
+    <file path="/dbcpConfig.properties" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372949548429" ignored="false" />
+    <file path="/QueStackUtility.java" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372953377228" ignored="false" />
+    <file path="/form.jsp" changelist="0592f9fb-f27c-45b1-b197-d46b3b72085f" time="1372961109291" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +63,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -79,7 +100,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -92,7 +112,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="137" selection-end="243" vertical-scroll-proportion="0.0">
+            <state line="3" column="2" selection-start="136" selection-end="136" vertical-scroll-proportion="-1.92">
               <folding />
             </state>
           </provider>
@@ -100,53 +120,35 @@
       </file>
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="37" selection-start="1179" selection-end="1194" vertical-scroll-proportion="-16.04">
+            <state line="35" column="35" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-7.64">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
           </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
             <state />
           </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="Answer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/Answer.java">
+      <file leaf-file-name="form.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/form.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+            <state line="158" column="43" selection-start="4529" selection-end="4534" vertical-scroll-proportion="0.24397591">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/Question.java">
+      <file leaf-file-name="KeywordSearch.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/KeywordSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="21" selection-start="409" selection-end="409" vertical-scroll-proportion="0.7804878">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/QuestionServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="37" selection-start="1299" selection-end="1303" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/Question.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="49" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.0">
+            <state line="13" column="26" selection-start="371" selection-end="384" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,22 +173,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/brucegallery/servlet/HelloServlet.java" />
-        <option value="$PROJECT_DIR$/src/org/brucegallery/servlet/HelloFilter.java" />
-        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/HelloFilter.java" />
-        <option value="$PROJECT_DIR$/src/org/BruceGallery/DB/ConnectionSource.java" />
-        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/PublicParam.java" />
-        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/QuestionController.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/Catalog.java" />
         <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/Question.java" />
         <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/HelloServlet.java" />
-        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/ConnectionSource.java" />
-        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Utility.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/Answer.java" />
+        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/dbcpConfig.properties" />
+        <option value="$PROJECT_DIR$/web/META-INF/context.xml" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/getJSON.jsp" />
+        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Utility.java" />
+        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/QueStackUtility.java" />
         <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/Question.java" />
+        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/ConnectionSource.java" />
         <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/QuestionServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/KeywordSearch.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/form.jsp" />
       </list>
     </option>
   </component>
@@ -286,6 +288,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QueStack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -311,6 +385,14 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dropbox\workspace\QueStack\web" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.BruceGallery.QueStack.Model" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.QueStack">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -675,33 +757,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33730835" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17717206" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3253833" sideWeight="0.45757577" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35093698" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56558776" sideWeight="0.54242426" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3270869" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2" sideWeight="0.2957265" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6115843" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636364" sideWeight="0.67291313" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6746167" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5417377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10526316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39898133" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -772,117 +854,125 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/Catalog.java">
+    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/PublicParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="230" selection-end="239" vertical-scroll-proportion="0.0">
+        <state line="17" column="22" selection-start="369" selection-end="369" vertical-scroll-proportion="0.24777183" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_21/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="321" column="69" selection-start="14013" selection-end="14013" vertical-scroll-proportion="-1.5018249">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Dev/apache-tomcat-6.0.37/lib/servlet-api.jar!/javax/servlet/http/HttpServletRequest.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_21/src.zip!/java/sql/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="165" selection-end="165" vertical-scroll-proportion="0.14869888" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/QuestionFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+        <state line="604" column="29" selection-start="27243" selection-end="27243" vertical-scroll-proportion="-0.9309091">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/json-lib-2.4-jdk15-sources.jar!/net/sf/json/JSONArray.java">
+    <entry file="file://$PROJECT_DIR$/web/onclick.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="13" selection-start="3693" selection-end="3693" vertical-scroll-proportion="-0.6272727" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/ConnectionSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="542" selection-end="542" vertical-scroll-proportion="0.59680283">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/PublicParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="299" selection-end="299" vertical-scroll-proportion="-0.27886322" />
-      </provider>
-    </entry>
-    <entry file="jar://D:/Dev/apache-tomcat-6.0.37/lib/servlet-api.jar!/javax/servlet/ServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="607" selection-end="607" vertical-scroll-proportion="0.23887588" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/getJSON.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="14" selection-start="722" selection-end="722" vertical-scroll-proportion="1.3753666">
+        <state line="13" column="17" selection-start="342" selection-end="361" vertical-scroll-proportion="-0.64">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Utility.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_21/src.zip!/java/util/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="37" selection-start="440" selection-end="440" vertical-scroll-proportion="0.30601093">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Dev/apache-tomcat-6.0.37/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="37" selection-start="2886" selection-end="2906" vertical-scroll-proportion="1.9512196" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="49" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.0">
+        <state line="340" column="0" selection-start="13948" selection-end="13948" vertical-scroll-proportion="0.112">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/QuestionServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="37" selection-start="1299" selection-end="1303" vertical-scroll-proportion="0.0">
+        <state line="32" column="46" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.6211604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/QueStackUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="14" selection-start="423" selection-end="423" vertical-scroll-proportion="0.342246">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="137" selection-end="243" vertical-scroll-proportion="0.0">
+        <state line="3" column="2" selection-start="136" selection-end="136" vertical-scroll-proportion="-1.92">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/getJSON.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="39" selection-start="412" selection-end="412" vertical-scroll-proportion="0.26229507">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/ConnectionSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="0" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.052910052">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Controller/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="44" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.63492066">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="37" selection-start="1179" selection-end="1194" vertical-scroll-proportion="-16.04">
+        <state line="35" column="35" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-7.64">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
       </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
       </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/Answer.java">
+    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Servlet/KeywordSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+        <state line="13" column="26" selection-start="371" selection-end="384" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/BruceGallery/QueStack/Model/Question.java">
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="409" selection-end="409" vertical-scroll-proportion="0.7804878">
+        <state line="911" column="27" selection-start="17633" selection-end="17640" vertical-scroll-proportion="-4.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1957" column="31" selection-start="34119" selection-end="34132" vertical-scroll-proportion="-0.6807229">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="43" selection-start="4529" selection-end="4534" vertical-scroll-proportion="0.24397591">
           <folding />
         </state>
       </provider>
